@@ -11,6 +11,9 @@ body{
     width: 100%;
     min-height:100vh;
     display: flex;
+    -moz-display:flex;
+    -webkit-display:flex;
+    -o-display:flex;
     align-items: center;
     justify-content: center;
 }
@@ -84,6 +87,7 @@ h1{
     display: block;
     transition: .5s ease;
 }
+/* media querries for small screens */
 @media (max-width:980px){
     section{
         grid-template-columns: 1fr 1fr;
