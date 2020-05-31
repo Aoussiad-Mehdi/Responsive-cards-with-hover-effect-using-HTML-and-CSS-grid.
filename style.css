@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height:100vh;
+}
+.container{
+    width: 100%;
+    min-height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section{
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card{
+    height: 450px;
+    width: 290px;
+    margin-left: 12%;
+    border-radius: 15px;
+    position: relative;
+    transition: .9s linear;
+}
+img{
+    width: 90%;
+    height: 230px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.text{
+    width: 100%;
+    height: 50%;
+}
+h2{
+    text-align: center;
+}
+p{
+    padding: 20px;
+}
+.filter{
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.95;
+    display: none;
+    transition: all .9s linear;
+    border-radius: 15px;
+}
+h1{
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 20%;
+}
+.btn{
+    padding: 16px 45px;
+    color: white;
+    background: blue;
+    cursor: pointer;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 50%;
+    margin-left: 25%;
+}
+.card:hover .filter{
+    display: block;
+    transition: .5s ease;
+}
+@media (max-width:980px){
+    section{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width:680px){
+    section{
+        grid-template-columns: 1fr;
+    }
+    .card{
+        margin-left: 14%;
+    }
+}
